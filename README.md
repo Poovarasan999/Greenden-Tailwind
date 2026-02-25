@@ -1,4 +1,4 @@
-🌿 Greenden – Plant Website
+#Greenden – Plant Website
 
 Greenden is a simple plant store website created using HTML and Tailwind CSS.
 This project is mainly for beginners to practice Tailwind CSS and responsive design.
