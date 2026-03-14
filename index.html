@@ -7,8 +7,6 @@
     <title>Greenden</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <script src="ifelse.js"></script>
-
 </head>
 
 <body>
@@ -16,7 +14,7 @@
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-2xl sticky top-0 z-10">
         <h1 class="text-3xl font-bold">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -26,8 +24,20 @@
             <a class="hover:underline hover:text-black" href="product.html">Products</a>
             <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
         </div>
-
     </nav>
+
+    <!--Side Navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 " style="width: 50%; height: 100vh; right: -50%; transition: all 1s;">
+        <div class="text-right p-4">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+
+        </div>
+        <div class="flex flex-col items-center gap-10 text-gray-700">
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </div>
+    </section>
     <!--Header Section with Hero Image and Text -->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center items-center ">
         <div>
@@ -94,22 +104,26 @@
         <h1 class="font-bold text-3xl">Best Seller</h1>
         <div class="grid grid-cols-2 mt-6 gap-4 md:grid-cols-4 ">
             <div class="">
-                <img src="./images/bs-img1.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
+                <img src="./images/bs-img1.jpeg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
                 <h2>Rose Plant</h2>
                 <p>$25.00</p>
             </div>
             <div>
-                <img src="./images/bs-img2.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
+                <img src="./images/bs-img2.jpeg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
                 <h2>Rose Plant</h2>
                 <p>$25.00</p>
             </div>
             <div>
-                <img src="./images/bs-img3.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
+                <img src="./images/bs-img3.jpeg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
                 <h2>Rose Plant</h2>
                 <p>$25.00</p>
             </div>
             <div>
-                <img src="./images/bs-img4.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
+                <img src="./images/bs-img4.jpeg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
 
                 <h2>Rose Plant</h2>
                 <p>$25.00</p>
@@ -120,25 +134,25 @@
     <section>
         <h1 class="text-3xl font-bold text-center">Customer Reviews</h1>
         <div class="flex flex-col justify-center items-center m-5 gap-4 md:flex-row ">
-            <div class="bg-green-900 text-white container p-5 rounded-2xl hover:shadow-xl">   
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum aut provident tempore quisquam
+            <div class="bg-green-900 text-white container p-5 rounded-2xl hover:shadow-xl">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum aut provident tempore quisquam
                     nemo veritatis reprehenderit officiis omnis, est aperiam id, temporibus, neque voluptas
                     voluptatibus! Illum neque itaque dolorem?</p>
-                    <p class="font-bold text-yellow-500">- Genry Mathew</p>                   
+                <p class="font-bold text-yellow-500">- Genry Mathew</p>
             </div>
-            <div class="bg-green-900 text-white container p-5 rounded-2xl hover:shadow-2xl">   
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum aut provident tempore quisquam
+            <div class="bg-green-900 text-white container p-5 rounded-2xl hover:shadow-2xl">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum aut provident tempore quisquam
                     nemo veritatis reprehenderit officiis omnis, est aperiam id, temporibus, neque voluptas
                     voluptatibus! Illum neque itaque dolorem?</p>
-                    <p class="font-bold text-yellow-500">- Jim</p>                   
+                <p class="font-bold text-yellow-500">- Jim</p>
             </div>
-            <div class="bg-green-900 text-white container p-5 rounded-2xl hover:shadow-2xl">   
-                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum aut provident tempore quisquam
+            <div class="bg-green-900 text-white container p-5 rounded-2xl hover:shadow-2xl">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nostrum aut provident tempore quisquam
                     nemo veritatis reprehenderit officiis omnis, est aperiam id, temporibus, neque voluptas
                     voluptatibus! Illum neque itaque dolorem?</p>
-                    <p class="font-bold text-yellow-500">- Peter</p>                   
+                <p class="font-bold text-yellow-500">- Peter</p>
             </div>
-            </div>
+        </div>
         </div>
     </section>
     <!--News Letter-->
@@ -157,7 +171,7 @@
             <p class="text-sm">&copy; 2024 Greenden. All rights reserved.</p>
         </div>
     </section>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

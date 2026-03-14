@@ -10,7 +10,7 @@
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-2xl sticky top-0 z-10">
         <h1 class="text-3xl font-bold">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -21,52 +21,65 @@
             <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
         </div>
     </nav>
+
+    <!--Side Navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 " style="width: 50%; height: 100vh; right: -50%; transition: all 1s;">
+        <div class="text-right p-4">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+
+        </div>
+        <div class="flex flex-col items-center gap-10 text-gray-700">
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </div>
+    </section>
     <section class="p-4 text-center">
         <h1 class="font-bold text-3xl">Our Products</h1>
-        <input type="text" placeholder="Search products..." class="border border-black p-2 m-4" style="width: 80%;">
-        <div class="grid grid-cols-2 mt-6 gap-4 md:grid-cols-4 ">
-            <div class="">
+        <input id="search" type="text" placeholder="Search products..." class="border border-black p-2 m-4" style="width: 80%;">
+        <div id="product-container" class="grid grid-cols-2 mt-6 gap-4 md:grid-cols-4 ">
+            <div>
                 <img src="./images/bs-img1.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
-                <h2>Rose Plant</h2>
+                <h1>Rose Plant</h1>
                 <p>$25.00</p>
             </div>
             <div>
                 <img src="./images/bs-img2.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
-                <h2>Rose Plant</h2>
+                <h1>Lily Plant</h1>
                 <p>$25.00</p>
             </div>
             <div>
                 <img src="./images/bs-img3.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
-                <h2>Rose Plant</h2>
+                <h1>Snake Plant</h1>
                 <p>$25.00</p>
             </div>
             <div>
                 <img src="./images/bs-img4.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
 
-                <h2>Rose Plant</h2>
+                <h1>Spider Plant</h1>
                 <p>$25.00</p>
             </div>
         </div>
-        <div class="grid grid-cols-2 mt-6 gap-4 md:grid-cols-4 ">
-            <div class="">
+        <div id="product-container" class="grid grid-cols-2 mt-6 gap-4 md:grid-cols-4">
+            <div>
                 <img src="./images/bs-img5.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
-                <h2>Rose Plant</h2>
+                <h1>Bougainvillea Plant</h1>
                 <p>$25.00</p>
             </div>
             <div>
                 <img src="./images/bs-img6.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
-                <h2>Rose Plant</h2>
+                <h1>Bloom Plant</h1>
                 <p>$25.00</p>
             </div>
             <div>
                 <img src="./images/bs-img7.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
-                <h2>Rose Plant</h2>
+                <h1>Arabic Plant</h1>
                 <p>$25.00</p>
             </div>
             <div>
                 <img src="./images/bs-img8.jpeg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2.5 rounded-2xl">
 
-                <h2>Rose Plant</h2>
+                <h1>Bird Plant</h1>
                 <p>$25.00</p>
             </div>
         </div>
@@ -78,6 +91,7 @@
             <p class="text-sm">&copy; 2024 Greenden. All rights reserved.</p>
         </div>
     </section>
+    <script src="product.js"></script>
     
 </body>
 </html>
